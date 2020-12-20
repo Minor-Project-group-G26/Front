@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Idea of Project in Plane JavaScript </h1>
+    <h1>Gourav Are You Fool !!</h1>
+    <p id="pid"></p>
+    <script>
+        var txt= "";
+        var abc= "";
+        var numbers =[{value:1,label:"Action"},{value:2,label:"Comedy"},{value:3,label:"Adventure"},{value:4,label:"Drama"},{value:5,label:"Mystery"},{value:6,label:"Fantasy"},{value:7,label:"Romance"},{value:8,label:"Thriller"},{value:9,label:"Crime"},{value:10,label:"Science"}];
+        var data =["Action","Comedy","Horror"]
+        data.forEach((d)=>{
+            numbers.forEach((names,index,array)=>{
+            if (names.label === d) {
+                txt = txt+"Id :"+names.value+" "+"Label ="+names.label+"<br>";
+            }
+        });
+
+        })
+        for(let i=0; i<numbers; i++){
+            abc = abc + numbers[i].label
+        }
+        
+        document.getElementById("pid").innerHTML = txt+"<br/>"+"SetGenres() with the Values"+abc;
+
+       
+
+    </script>
+</body>
+
+</html>
